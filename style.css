@@ -32,6 +32,58 @@ h1 {
   color: #93c5fd;
 }
 
+.controls {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.mode-toggle {
+  display: flex;
+  background: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mode-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mode-btn:hover {
+  color: #f9fafb;
+}
+
+.mode-btn.active {
+  background: #2563eb;
+  color: white;
+}
+
+#difficulty {
+  padding: 0.5rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background: #1f2937;
+  color: #f9fafb;
+  cursor: pointer;
+}
+
+#difficulty.hidden {
+  display: none;
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(3, 100px);

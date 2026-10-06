@@ -9,6 +9,17 @@
 <body>
   <div class="game-container">
     <h1>Tic-Tac-Toe</h1>
+    <div class="controls">
+      <div class="mode-toggle">
+        <button class="mode-btn active" data-mode="pvp">2 Players</button>
+        <button class="mode-btn" data-mode="ai">Vs AI</button>
+      </div>
+      <select id="difficulty" class="hidden" aria-label="Difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard" selected>Hard</option>
+      </select>
+    </div>
     <div class="status" id="status">Player X's turn</div>
     <div class="board" id="board">
       <div class="cell" data-index="0"></div>
@@ -23,9 +34,9 @@
     </div>
     <button id="reset-btn">New Game</button>
     <div class="scoreboard">
-      <div class="score"><span>X</span><strong id="score-x">0</strong></div>
+      <div class="score"><span id="label-x">X</span><strong id="score-x">0</strong></div>
       <div class="score"><span>Draws</span><strong id="score-draw">0</strong></div>
-      <div class="score"><span>O</span><strong id="score-o">0</strong></div>
+      <div class="score"><span id="label-o">O</span><strong id="score-o">0</strong></div>
     </div>
   </div>
   <script src="script.js"></script>
